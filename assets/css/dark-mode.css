@@ -1,0 +1,76 @@
+/* Estilo do switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+  margin-bottom: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4f4f4f;
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Estilo do modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .content {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .pokemon {
+  border: 1px solid #444;
+}
+
+body.dark-mode .pokemon .name {
+  color: #000;
+}
+
+body.dark-mode .pagination button {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+/* Modal escuro opcional */
+body.dark-mode #pokemonDetail .modal {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
