@@ -15,6 +15,19 @@ Uma Pokédex interativa feita com HTML, CSS e JavaScript, que permite visualizar
 
 ## 📂 Estrutura de Arquivos
 
+/
+├── index.html
+├── /assets
+│ ├── /css
+│ │ ├── global.css
+│ │ ├── pokedex.css
+│ │ └── dark-mode.css
+│ └── /js
+│ ├── pokemon-model.js
+│ ├── poke-api.js
+│ ├── main.js
+│ └── dark-mode.js
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
